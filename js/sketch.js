@@ -3,7 +3,7 @@ var flowers = [];
 var num_flowers = 9;
 var drops = [];
 
-var hits = 8;
+var hits = 1;
 var win = false;
 var lost = false;
 var restart = false;
@@ -16,7 +16,11 @@ function setup() {
     ship = new Ship();
     alien = loadImage('images/alien2.jpg');
     for (var i = 0; i < num_flowers; i++) {
+<<<<<<< HEAD
         flowers[i] = new Flow(i * 65 + 80, 60, random(8), alien);
+=======
+        flowers[i] = new Flow(i * 65 + 80, 60, hits);
+>>>>>>> ed554ba50c419851d6b8f28fcf825c9954d33848
     }
 }
 
