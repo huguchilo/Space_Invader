@@ -8,12 +8,15 @@ var win = false;
 var lost = false;
 var restart = false;
 
+var alien;
+
 
 function setup() {
     createCanvas(600, 400);
     ship = new Ship();
+    alien = loadImage('images/alien2.jpg');
     for (var i = 0; i < num_flowers; i++) {
-        flowers[i] = new Flow(i * 65 + 80, 60, random(8));
+        flowers[i] = new Flow(i * 65 + 80, 60, random(8), alien);
     }
 }
 
