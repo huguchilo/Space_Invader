@@ -1,5 +1,5 @@
 ﻿class Flow {
-    constructor(x, y, hits, img) {
+    constructor(x, y, hits) {
         this.x = x;
         this.y = y;
         this.ri = 20;
@@ -9,7 +9,7 @@
         this.toDelete = false;
         this.xdir = 1;
         this.ydir = 0;
-        this.img = img;
+        this.img;
 
         this.grow = function() {
             this.r = this.r + 2;
@@ -26,10 +26,10 @@
             this.y = this.y + this.ydir;
         };
         this.show = function() {
-            //noStroke();
-            //fill(255, 0, 200, 150);
-            //ellipse(this.x, this.y, this.r * 2, this.r * 2);
-            image(this.img, this.x, this.y);
+            noStroke();
+            fill(255, 0, 200, 150);
+            ellipse(this.x, this.y, this.r * 2, this.r * 2);
+            //image(this.img, this.x, this.y);
         };
     }
 }
