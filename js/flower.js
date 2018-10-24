@@ -11,7 +11,7 @@
         this.ydir = 0;
         this.grow = function() {
             this.r = this.r + 2;
-            if (this.r > this.ri + this.aumento * this.tiros) {
+            if (this.r >= this.ri + this.aumento * this.tiros) {
                 this.toDelete = true;
             }
         };
