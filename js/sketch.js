@@ -1,9 +1,9 @@
 ﻿var ship;
 var flowers = [];
-var num_flowers = 9;
+var num_flowers = 3;
 var drops = [];
 
-var hits = 3;
+var hits = 10;
 var win = false;
 var lost = false;
 var restart = false;
