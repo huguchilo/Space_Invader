@@ -1,3 +1,5 @@
 .vs/
 .vs/slnx.sqlite
 .suo
+*.sqlite
+.vs/Space_Invader/v15/.suo
