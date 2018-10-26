@@ -3,7 +3,6 @@ var flowers = [];
 var num_flowers = 9;
 var drops = [];
 
-var hits = 1;
 var win = false;
 var lost = false;
 var restart = false;
